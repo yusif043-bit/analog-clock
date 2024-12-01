@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.clock {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.dot {
+    position: absolute;
+    transform: rotate(calc(6deg * var(--dot)));
+    text-align: center;
+    inset: 0.7px;
+    z-index: 2;
+}
+
+.seconds {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: #fbfbfb;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.sec {
+    position: absolute;
+    transform: rotate(calc(90deg + 6deg * var(--sec)));
+    transition: 1s;
+    text-align: center;
+    inset: 13px;
+    font-size: 12px;
+    z-index: 4;
+}
+
+.minutes {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background-color: #323232;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.min {
+    position: absolute;
+    transform: rotate(calc(90deg + 6deg * var(--min)));
+    text-align: center;
+    inset: 12px;
+    font-size: 12px;
+    color: white;
+    transition: 1s;
+    z-index: 6;
+}
+
+.hours {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-color: #fbfbfb;
+    border-radius: 50%;
+    z-index: 7;
+}
+
+.hour {
+    position: absolute;
+    transform: rotate(calc(90deg + 30deg * var(--hour)));
+    text-align: center;
+    inset: 12px;
+    font-size: 20px;
+    transition: 1s;
+    z-index: 8;
+}
+
+.redline {
+    width: 45%;
+    height: 0.1rem;
+    background-color: red;
+    transform: translateX(50%);
+    z-index: 9;
+
+    .dot1 {
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        background-color: red;
+        transform: translateY(-50%);
+    }
+}
+
+.btsec {
+
+    /* position: absolute; */
+    button {
+        position: absolute;
+        z-index: 999;
+        background-color: #101010;
+    }
+
+    button:hover {
+        background-color: #101010;
+    }
+
+    .start-stopwatch {
+        /* transform: translate(0%, -1850%); */
+        right: 2.8rem;
+        rotate: 50deg;
+        top: 5rem;
+    }
+
+    .stop-stopwatch {
+        /* transform: translate(0%, -1800%); */
+        right: -0.9rem;
+        rotate: 90deg;
+    }
+
+    .reset-stopwatch {
+        /* transform: translate(0%, -1800%); */
+        rotate: 130deg;
+        right: 2.8rem;
+        bottom: 5rem;
+    }
+}
+
+.stopwatch {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url('../images/stopwatch-overlay.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(55px, 110px);
+
+    .dot {
+        position: absolute;
+        width: 0.3rem;
+        height: 0.3rem;
+        background-color: red;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .st-line {
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        background-color: red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        transform-origin: 25% 0;
+        transition: 1s;
+        rotate: -90deg;
+    }
+
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 12px;
+        transform: translateX(-50%);
+    }
+}
+
+.weekdays {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+    border-radius: 50%;
+    transform: translate(-10%, -115%);
+
+    .day {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: rotate(calc(51.4deg * var(--day)));
+        font-size: 8px;
+        inset: 2px;
+    }
+
+    .day-line {
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        background-color: red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        transform-origin: 25% 0;
+        transition: 1s;
+        rotate: calc(180deg);
+    }
+}
+
+.month {
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, 75%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    *{position: relative;}
+    gap: 7px;
+    border: 1px solid black;
+}

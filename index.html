@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClockTask2</title>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="clock">
+      <div class="btsec">
+        <button class="btn start-stopwatch"></button>
+        <button class="btn stop-stopwatch"></button>
+        <button class="btn reset-stopwatch"></button>
+      </div>
+      <div class="dots">
+        <div class="dot" style="--dot: 1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 7">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 9">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 11">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 12">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 13">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 14">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 15">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 16">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 17">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 18">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 19">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 20">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 21">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 22">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 23">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 24">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 25">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 26">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 27">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 28">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 29">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 30">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 31">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 32">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 33">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 34">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 35">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 36">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 37">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 38">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 39">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 40">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 41">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 42">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 43">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 44">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 45">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 46">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 47">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 48">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 49">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 50">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 51">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 52">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 53">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 54">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 55">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 56">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 57">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 58">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 59">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+        <div class="dot" style="--dot: 60">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#494949"
+            width="24px"
+            height="24px"
+            viewBox="0 0 20 20"
+          >
+            <path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z" />
+          </svg>
+        </div>
+      </div>
+      <div class="seconds">
+        <div class="sec" style="--sec: 1">1</div>
+        <div class="sec" style="--sec: 2">2</div>
+        <div class="sec" style="--sec: 3">3</div>
+        <div class="sec" style="--sec: 4">4</div>
+        <div class="sec" style="--sec: 5">5</div>
+        <div class="sec" style="--sec: 6">6</div>
+        <div class="sec" style="--sec: 7">7</div>
+        <div class="sec" style="--sec: 8">8</div>
+        <div class="sec" style="--sec: 9">9</div>
+        <div class="sec" style="--sec: 10">10</div>
+        <div class="sec" style="--sec: 11">11</div>
+        <div class="sec" style="--sec: 12">12</div>
+        <div class="sec" style="--sec: 13">13</div>
+        <div class="sec" style="--sec: 14">14</div>
+        <div class="sec" style="--sec: 15">15</div>
+        <div class="sec" style="--sec: 16">16</div>
+        <div class="sec" style="--sec: 17">17</div>
+        <div class="sec" style="--sec: 18">18</div>
+        <div class="sec" style="--sec: 19">19</div>
+        <div class="sec" style="--sec: 20">20</div>
+        <div class="sec" style="--sec: 21">21</div>
+        <div class="sec" style="--sec: 22">22</div>
+        <div class="sec" style="--sec: 23">23</div>
+        <div class="sec" style="--sec: 24">24</div>
+        <div class="sec" style="--sec: 25">25</div>
+        <div class="sec" style="--sec: 26">26</div>
+        <div class="sec" style="--sec: 27">27</div>
+        <div class="sec" style="--sec: 28">28</div>
+        <div class="sec" style="--sec: 29">29</div>
+        <div class="sec" style="--sec: 30">30</div>
+        <div class="sec" style="--sec: 31">31</div>
+        <div class="sec" style="--sec: 32">32</div>
+        <div class="sec" style="--sec: 33">33</div>
+        <div class="sec" style="--sec: 34">34</div>
+        <div class="sec" style="--sec: 35">35</div>
+        <div class="sec" style="--sec: 36">36</div>
+        <div class="sec" style="--sec: 37">37</div>
+        <div class="sec" style="--sec: 38">38</div>
+        <div class="sec" style="--sec: 39">39</div>
+        <div class="sec" style="--sec: 40">40</div>
+        <div class="sec" style="--sec: 41">41</div>
+        <div class="sec" style="--sec: 42">42</div>
+        <div class="sec" style="--sec: 43">43</div>
+        <div class="sec" style="--sec: 44">44</div>
+        <div class="sec" style="--sec: 45">45</div>
+        <div class="sec" style="--sec: 46">46</div>
+        <div class="sec" style="--sec: 47">47</div>
+        <div class="sec" style="--sec: 48">48</div>
+        <div class="sec" style="--sec: 49">49</div>
+        <div class="sec" style="--sec: 50">50</div>
+        <div class="sec" style="--sec: 51">51</div>
+        <div class="sec" style="--sec: 52">52</div>
+        <div class="sec" style="--sec: 53">53</div>
+        <div class="sec" style="--sec: 54">54</div>
+        <div class="sec" style="--sec: 55">55</div>
+        <div class="sec" style="--sec: 56">56</div>
+        <div class="sec" style="--sec: 57">57</div>
+        <div class="sec" style="--sec: 58">58</div>
+        <div class="sec" style="--sec: 59">59</div>
+        <div class="sec" style="--sec: 60">0</div>
+      </div>
+      <div class="minutes">
+        <div class="min" style="--min: 1"><b>1</b></div>
+        <div class="min" style="--min: 2"><b>2</b></div>
+        <div class="min" style="--min: 3"><b>3</b></div>
+        <div class="min" style="--min: 4"><b>4</b></div>
+        <div class="min" style="--min: 5"><b>5</b></div>
+        <div class="min" style="--min: 6"><b>6</b></div>
+        <div class="min" style="--min: 7"><b>7</b></div>
+        <div class="min" style="--min: 8"><b>8</b></div>
+        <div class="min" style="--min: 9"><b>9</b></div>
+        <div class="min" style="--min: 10"><b>10</b></div>
+        <div class="min" style="--min: 11"><b>11</b></div>
+        <div class="min" style="--min: 12"><b>12</b></div>
+        <div class="min" style="--min: 13"><b>13</b></div>
+        <div class="min" style="--min: 14"><b>14</b></div>
+        <div class="min" style="--min: 15"><b>15</b></div>
+        <div class="min" style="--min: 16"><b>16</b></div>
+        <div class="min" style="--min: 17"><b>17</b></div>
+        <div class="min" style="--min: 18"><b>18</b></div>
+        <div class="min" style="--min: 19"><b>19</b></div>
+        <div class="min" style="--min: 20"><b>20</b></div>
+        <div class="min" style="--min: 21"><b>21</b></div>
+        <div class="min" style="--min: 22"><b>22</b></div>
+        <div class="min" style="--min: 23"><b>23</b></div>
+        <div class="min" style="--min: 24"><b>24</b></div>
+        <div class="min" style="--min: 25"><b>25</b></div>
+        <div class="min" style="--min: 26"><b>26</b></div>
+        <div class="min" style="--min: 27"><b>27</b></div>
+        <div class="min" style="--min: 28"><b>28</b></div>
+        <div class="min" style="--min: 29"><b>29</b></div>
+        <div class="min" style="--min: 30"><b>30</b></div>
+        <div class="min" style="--min: 31"><b>31</b></div>
+        <div class="min" style="--min: 32"><b>32</b></div>
+        <div class="min" style="--min: 33"><b>33</b></div>
+        <div class="min" style="--min: 34"><b>34</b></div>
+        <div class="min" style="--min: 35"><b>35</b></div>
+        <div class="min" style="--min: 36"><b>36</b></div>
+        <div class="min" style="--min: 37"><b>37</b></div>
+        <div class="min" style="--min: 38"><b>38</b></div>
+        <div class="min" style="--min: 39"><b>39</b></div>
+        <div class="min" style="--min: 40"><b>40</b></div>
+        <div class="min" style="--min: 41"><b>41</b></div>
+        <div class="min" style="--min: 42"><b>42</b></div>
+        <div class="min" style="--min: 43"><b>43</b></div>
+        <div class="min" style="--min: 44"><b>44</b></div>
+        <div class="min" style="--min: 45"><b>45</b></div>
+        <div class="min" style="--min: 46"><b>46</b></div>
+        <div class="min" style="--min: 47"><b>47</b></div>
+        <div class="min" style="--min: 48"><b>48</b></div>
+        <div class="min" style="--min: 49"><b>49</b></div>
+        <div class="min" style="--min: 50"><b>50</b></div>
+        <div class="min" style="--min: 51"><b>51</b></div>
+        <div class="min" style="--min: 52"><b>52</b></div>
+        <div class="min" style="--min: 53"><b>53</b></div>
+        <div class="min" style="--min: 54"><b>54</b></div>
+        <div class="min" style="--min: 55"><b>55</b></div>
+        <div class="min" style="--min: 56"><b>56</b></div>
+        <div class="min" style="--min: 57"><b>57</b></div>
+        <div class="min" style="--min: 58"><b>58</b></div>
+        <div class="min" style="--min: 59"><b>59</b></div>
+        <div class="min" style="--min: 60"><b>0</b></div>
+      </div>
+      <div class="hours">
+        <div class="hour" style="--hour: 1">1</div>
+        <div class="hour" style="--hour: 2">2</div>
+        <div class="hour" style="--hour: 3">3</div>
+        <div class="hour" style="--hour: 4">4</div>
+        <div class="hour" style="--hour: 5">5</div>
+        <div class="hour" style="--hour: 6">6</div>
+        <div class="hour" style="--hour: 7">7</div>
+        <div class="hour" style="--hour: 8">8</div>
+        <div class="hour" style="--hour: 9">9</div>
+        <div class="hour" style="--hour: 10">10</div>
+        <div class="hour" style="--hour: 11">11</div>
+        <div class="hour" style="--hour: 12">12</div>
+        <div class="stopwatch">
+          <div class="lines">
+            <div class="dot"></div>
+            <div class="st-line"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="weekdays">
+          <div class="dot"></div>
+          <div class="day-line"></div>
+          <div class="day" style="--day: 1">MON</div>
+          <div class="day" style="--day: 2">TUE</div>
+          <div class="day" style="--day: 3">WED</div>
+          <div class="day" style="--day: 4">THU</div>
+          <div class="day" style="--day: 5">FRI</div>
+          <div class="day" style="--day: 6">SAT</div>
+          <div class="day" style="--day: 7">SUN</div>
+        </div>
+        <div class="month fs-6 text-light" style="background-color: #303134;">
+          <div class="daynumber"></div>
+          <div class="date"></div>
+        </div>
+      </div>
+      <div class="redline">
+        <div class="dot1"></div>
+      </div>
+    </div>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

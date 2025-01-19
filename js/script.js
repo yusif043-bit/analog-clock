@@ -47,6 +47,7 @@ const updateTime = ()=>{
     let currentDay = new Date().getDay();
     let currentDayNumber = new Date().getDate();
     let currentMonth = new Date().getMonth();
+    console.log(currentMonth)
     // console.log(currentDate);
     
     // secondnum.forEach((item, index)=>{
@@ -75,7 +76,7 @@ const updateTime = ()=>{
 
     // month.style.strokeDashoffset = 260 - (260 * (currentDay))/30;
     daynumber.innerHTML = currentDayNumber;
-    month.innerHTML = `${months[currentMonth-1]}`;
+    month.innerHTML = `${months[currentMonth]}`;
     console.log(currentMonth);
     
 };
